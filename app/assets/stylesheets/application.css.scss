@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+@import "bootstrap-sprockets";
+
+.wraper{
+  padding: 0 10px;
+  ul{
+    list-style-type: none;
+  }
+  .header{
+    padding: 20px 0 17px;
+    background: #666666;
+    .logo{
+      text-align: center;
+    }
+    input[type="text"]{
+      width: 150px;
+      margin-left: 40px;
+    }
+    h1{
+      font: 18px Arial;
+      margin: 0;
+      color: #fff;
+    }
+    a{
+      color: #fff;
+    }
+    .logo{
+      margin-top: 5px;
+    }
+    .logo a:hover{
+      text-decoration: none;
+    }
+    ul{
+      margin-top: 5px;
+      li{
+        float: left;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-right: 2px solid #2E2F30 ;
+      }
+    }
+
+  }
+}
+
+
+.middle{
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .title{
+    margin-left: 20px;
+    margin-top: 10px;
+    font: 22px Verdana;
+  }
+  .advert{
+    border: 2px solid #999999;
+    border-radius: 10px;
+    margin: 10px 19px;
+    padding: 5px;
+  }
+ 
+}
+
+
+.footer{
+  padding: 30px;
+  background-color: #666666;
+  border-right: 2px solid #2E2F30;
+  font: 28px Calibri;
+}
+
+@media (max-width: 768px){
+  .header ul{
+    padding-left: 70px;
+  }
+  .btn.btn-info{
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 992px){
+  .header ul{
+    padding-left: 70px;
+
+  }
+  .btn.btn-info{
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+}

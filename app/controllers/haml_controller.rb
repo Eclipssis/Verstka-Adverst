@@ -4,4 +4,8 @@ class HamlController < ApplicationController
     render 'haml/index'
   end
 
+  def notice
+    render 'haml/notice'
+  end
+
 end

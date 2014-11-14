@@ -1,0 +1,38 @@
+%section.middle.container
+  %ol.breadcrumb.pull-left
+    %li
+      %a{:href => "#"} Главная
+    %li.active Вход
+  .sign-in
+    %form.form-horizontal{:role => "form"}
+      .form-group
+        %label.col-sm-2.control-label{:for => "login"} Логин
+        .col-sm-10
+          %input#login.form-control{:placeholder => "Логин", :type => "text"}
+      .form-group
+        %label.col-sm-2.control-label{:for => "fio"} Ф.И.О
+        .col-sm-10
+          %input#date.form-control{:placeholder => "Ф.И.О", :type => "text"}
+      .form-group
+        %label.col-sm-2.control-label{:for => "date"} День рождения
+        .col-sm-10
+          %input#fio.form-control{:placeholder => "date", :type => "date"}
+      .form-group
+        %label.col-sm-2.control-label{:for => "search"} Страна Город
+        .col-sm-10
+          %input#search.form-control{:placeholder => "", :type => "search"}
+      .form-group
+        %label.col-sm-2.control-label{:for => "inputEmail"} Email
+        .col-sm-10
+          %input#inputEmail.form-control{:placeholder => "Email", :type => "email"}
+      .form-group
+        %label.col-sm-2.control-label{:for => "inputPassword"} Пароль
+        .col-sm-10
+          %input#inputPassword.form-control{:placeholder => "Password", :type => "password"}
+      .form-group
+        %label.col-sm-2.control-label{:for => "inputPassword"} Повторите пароль
+        .col-sm-10
+          %input#inputPassword.form-control{:placeholder => "Password", :type => "password"}
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          %button.btn.btn-info{:type => "submit"} Зарегистрироватся

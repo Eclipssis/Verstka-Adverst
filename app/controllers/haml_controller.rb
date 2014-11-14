@@ -12,4 +12,8 @@ class HamlController < ApplicationController
     render 'haml/sign_in'
   end
 
+  def registration
+    render 'haml/registration'
+  end
+
 end

@@ -8,4 +8,8 @@ class HamlController < ApplicationController
     render 'haml/notice'
   end
 
+  def sign_in
+    render 'haml/sign_in'
+  end
+
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'haml/notice', to: 'haml#notice'
   get 'haml/sign_in', to: 'haml#sign_in'
   get 'haml/registration', to: 'haml#registration'
+  get 'haml/profile', to: 'haml#profile'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

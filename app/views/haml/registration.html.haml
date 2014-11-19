@@ -1,9 +1,9 @@
 %section.middle.container
-  %ol.breadcrumb.pull-left
+  %ol.breadcrumb.col-lg-3.col-md-3.col-sm-3.col-xs-12
     %li
       %a{:href => "#"} Главная
     %li.active Вход
-  .sign-in
+  .registration.col-lg-8.col-md-6.col-sm-8.col-xs-12.col-lg-offset-2.col-md-offset-3.col-sm-offset-2
     %form.form-horizontal{:role => "form"}
       .form-group
         %label.col-sm-2.control-label{:for => "login"} Логин
@@ -12,11 +12,11 @@
       .form-group
         %label.col-sm-2.control-label{:for => "fio"} Ф.И.О
         .col-sm-10
-          %input#date.form-control{:placeholder => "Ф.И.О", :type => "text"}
+          %input#fio.form-control{:placeholder => "Ф.И.О", :type => "text"}
       .form-group
         %label.col-sm-2.control-label{:for => "date"} День рождения
         .col-sm-10
-          %input#fio.form-control{:placeholder => "date", :type => "date"}
+          %input#date.form-control{:placeholder => "date", :type => "date"}
       .form-group
         %label.col-sm-2.control-label{:for => "search"} Страна Город
         .col-sm-10
@@ -34,5 +34,5 @@
         .col-sm-10
           %input#inputPassword.form-control{:placeholder => "Password", :type => "password"}
       .form-group
-        .col-sm-offset-2.col-sm-10
+        .reg-btn.col-sm-offset-2.col-sm-10
           %button.btn.btn-info{:type => "submit"} Зарегистрироватся

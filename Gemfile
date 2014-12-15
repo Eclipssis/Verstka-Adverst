@@ -31,6 +31,15 @@ gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 
+gem 'simplecov', :require => false, :group => :test
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl'
+end
+
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

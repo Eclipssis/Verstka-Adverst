@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get 'haml/index', to: 'haml#index'
   get 'haml/notice', to: 'haml#notice'
   get 'haml/sign_in', to: 'haml#sign_in'
   get 'haml/registration', to: 'haml#registration'
   get 'haml/profile', to: 'haml#profile'
+
+
+  root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
